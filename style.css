@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Navbar*/
+nav{
+    background-color: rgb(37, 29, 20);
+    padding: 0 10%;
+    border-bottom: 2px solid rgb(163, 252, 255);
+}
+nav li{
+    margin: 0 20px;
+    line-height: 30px;
+}
+nav a{
+    color: rgb(251, 255, 194) !important;
+    transition: all 0.5s !important;
+}
+nav a:hover{
+    color: rgb(194, 253, 255) !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar-brand{
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: auto;
+    font-size: 24px;
+}
+.navbar-brand:hover{
+    font-size: 24px;
+}
+.dropdown-menu a{
+    color: black !important;
+}
+.dropdown-menu a:hover{
+    color: red !important;
+}
+.section{
+    background: white;
+    width: 100%;
+    padding: 70px 0;
+}
+.colored{
+    background: rgba(255, 252, 69, 0.308);
+}
+.container{
+    height: 100%;
+}
+.section .heading{
+    color: rgb(37, 29, 20);
+    margin-bottom: 30px;
+}
+.section .content{
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+/* Welcome Area */
+#home{
+    background: url('images/wallpapertip_mechanical-engineering-wallpaper_98893.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+#home .welcome{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 65px;
+    color: rgb(250, 255, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+}
+#home .welcome .heading{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    user-select: none;
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 900;
+    width: 70%;
+}
+#home .welcome .tagline{
+    width: 80%;
+    max-width: 900px;
+    font-size: 20px;
+    color: rgb(245, 188, 114);
+    margin-top: 30px;
+}
+#home .welcome .btn{
+    margin-top: 30px;
+    background: rgb(245, 188, 114);
+    color: black;
+    font-weight: 700;
+    border: 2px solid black;
+    transition: all 0.5s;
+    box-shadow: black;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+#home .welcome .btn:hover{
+    background: rgb(251, 255, 194);
+    box-shadow: 0px 15px 20px rgba(243, 105, 105, 0.4);
+    transform: translateY(-7px);
+}
+
+/* Notifications*/
+
+.board{
+    width: 90%;
+    height: 80vh;
+    max-width: 800px;
+    max-height: 500px;
+    border: 5px groove brown;
+    overflow-y: scroll;
+    padding-top: 5px;
+}
+.board .note{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-left: 10px;
+}
+
+/*Classes*/
+.dataTables_wrapper{
+    min-width: 100%;
+    margin-top: 50px;
+    border: 2px solid black;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.dataTables_length, .dataTables_filter, .dataTables_info{
+    padding: 10px;
+}
+.sorting_1{
+    padding-left: 30px !important;
+}
