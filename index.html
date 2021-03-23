@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -29,11 +31,11 @@
                   Content
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                  <li><a class="dropdown-item" href="./files/syllabus.pdf">Syllabus</a></li>
                   <li><a class="dropdown-item" href="#">Notes</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Academic Calendar</a></li>
-                  <li><a class="dropdown-item" href="#">Fee Structure</a></li>
+                  <li><a class="dropdown-item" href="./files/calendar.pdf">Academic Calendar</a></li>
+                  <li><a class="dropdown-item" href="./files/fee.pdf">Fee Structure</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -48,19 +50,16 @@
       </nav>
       <div id="home">
           <div class="welcome">
-            <div class="heading">Mechanical Engineering Board</div>
-            <div class="tagline">Don't want to attend online classes at moment? Want study material, notes or even recorded lectures? <b>Welcome to the official website of Section G Mechanchis.</b> Here you will get all the stuff you want for FREE.</div>
-            <a href="#classes"><div class="btn btn-primary">LECTURES</div></a>
+            <div class="heading" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">Mechanical Engineering Board</div>
+            <div class="tagline" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">Don't want to attend online classes at moment? Want study material, notes or even recorded lectures? Welcome to the <b> Official Website of Section G Mechanchis.</b> Here you will get all the stuff you want for FREE.</div>
+            <a href="#classes" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000"><div class="btn btn-primary">LECTURES</div></a>
         </div>
       </div>
       <div class="section" id="notifications">
         <div class="container">
           <h1 class="heading">Notifications</h1>
-          <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat perspiciatis ullam aut fugit veritatis minus libero dolores tenetur tempore illum, impedit id perferendis vitae, facilis explicabo consequatur deserunt saepe. Iste.</p>
+          <p class="content">Here are some important notifications from college or faculty. Please follow the instructions as per given orders.</p>
           <div class="board">
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
             <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
             <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
             <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
@@ -74,46 +73,125 @@
       <div class="section colored" id="classes">
         <div class="container">
           <h1 class="heading">Classes</h1>
-          <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat perspiciatis ullam aut fugit veritatis minus libero dolores tenetur tempore illum, impedit id perferendis vitae, facilis explicabo consequatur deserunt saepe. Iste.</p>
-          <table id="myTable">
+          <p class="content">Missed any lecture? Can't cope with ongoing syllabus in Class. Just re-watch previous lectures from here. You can search for the date or subject code to find your required video.</p>
+          <table id="classTable">
             <thead>
                 <tr>
                     <th scope="col">S.No.</th>
-                    <th scope="col">Title</th>
+                    <th scope="col">Subject-Code</th>
                     <th scope="col">Description</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Date</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                   <td>1</td>
-                  <td>ABC</td>
-                  <td>def</td>
-                  <td>hij</td>
+                  <td>EE-101</td>
+                  <td>*Video Link here*</td>
+                  <td>23-03-2021</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>ABC</td>
-                  <td>def</td>
-                  <td>hij</td>
+                  <td>HS-101</td>
+                  <td>*Video Link here*</td>
+                  <td>20-03-2021</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>ABC</td>
-                  <td>def</td>
-                  <td>hij</td>
+                  <td>MS-101</td>
+                  <td>*Video Link here*</td>
+                  <td>21-03-2021</td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>ABC</td>
-                  <td>def</td>
-                  <td>hij</td>
+                  <td>MA-111</td>
+                  <td>*Video Link here*</td>
+                  <td>22-03-2021</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>CY-101</td>
+                  <td>*Video Link here*</td>
+                  <td>16-03-2021</td>
                 </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <div class="section" id="assignments"></div>
+      <div class="section" id="assignments">
+        <div class="container">
+          <h1 class="heading">Assignments</h1>
+          <p class="content">All the given assignments will be uploaded here with every information. Students are given option to upload Answer-Key file <i>(in pdf format only)</i>. When the answers-key is uploaded, anyone can download it.</p>
+          <table id="assignmentTable">
+            <thead>
+                <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">To be Submitted by</th>
+                    <th scope="col">Answer-Key</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>HS-101 Assignment - Communications</td>
+                  <td>16-03-2021</td>
+                  <td>*Upload / Download Link*</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>MA-111 Assignment - Matrix <b>(G1)</b></td>
+                  <td>11-03-2021</td>
+                  <td>*Upload / Download Link*</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>CY-102 Lab File <b>(G2)</b></td>
+                  <td>18-03-2021</td>
+                  <td>*Upload / Download Link*</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>EE-101 Assignment AC Circuits</td>
+                  <td>15-03-2021</td>
+                  <td>*Upload / Download Link*</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section" id="footer">
+        <div class="container">
+          <h1 class="heading">Register your queries here</h1>
+          <p class="content">Have some queries? Spotted a bug? Fill the form to give your valuable feedback.</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="feedback" class="form-label">Feedback</label>
+              <textarea type="textarea" class="form-control" id="feedback" rows="8"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+          <div class="icons mt-5">
+            <a href="https://www.facebook.com/arora.jasjot"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/arora_jasjot"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/arora_jasjot"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.github.com/arora-jasjot"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/919736014570"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="message">Website created with <i class="fas fa-heart"></i></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -122,8 +200,13 @@
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#myTable').DataTable();
+            $('#classTable').DataTable();
+            $('#assignmentTable').DataTable();
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 </body>
 </html>
