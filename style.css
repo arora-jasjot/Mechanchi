@@ -146,22 +146,75 @@ nav a:hover{
     border-bottom: 1px solid gray;
     padding-left: 10px;
 }
-
-/*Tables*/
-.dataTables_wrapper{
-    min-width: 100%;
-    margin-top: 50px;
-    border: 2px solid black;
-    background-color: white;
-    padding-bottom: 10px;
+/* Content */
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
-.dataTables_length, .dataTables_filter, .dataTables_info{
-    padding: 10px;
+.cont-book{
+    width: 250px;
+    height: 300px;
+    border: 5px groove rgba(189, 137, 24, 0.644);
+    margin: 25px 50px;
+    background-color: rgba(209, 255, 255, 0.877);
 }
-.sorting_1{
-    padding-left: 20px !important;
+.cont-book .img{
+    height: 150px;
+    width: 100%;
+    background-color: black;
 }
-
+.cont-book .img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.cont-book:hover img{
+    opacity: 1;
+}
+.cont-book .head{
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    color: red;
+    margin-top: 10px;
+}
+.cont-book .sem, .cont-book .sub{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    color: rgb(0, 47, 255);
+    margin-top: 10px;
+}
+.cont-book .download{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(111, 35, 233);
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 15px;
+    transition: all 0.5s;
+    user-select: none;
+}
+.cont-book .download a{
+    color: white;
+    text-decoration: none;
+}
+.cont-book .download:hover{
+    background-color: teal;
+    cursor: pointer;
+}
 /*Footer*/
 #footer{
     background-color: rgba(0, 0, 0, 0.87);
@@ -170,13 +223,8 @@ nav a:hover{
 #footer .heading{
     color: rgb(255, 255, 79);
 }
-#footer form{
-    width: 90%;
-    max-width: 500px;
-}
-#footer form label{
-    color: rgb(163, 252, 255);
-    font-size: 18px;
+#footer .content a{
+    color: turquoise;
     font-weight: 600;
 }
 #footer .icons i{
@@ -210,14 +258,4 @@ nav a:hover{
 }
 #message .fa-heart{
     color: rgb(255, 38, 38);
-}
-@media only screen and (max-width: 600px){
-    table{
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width: 350px){
-    table{
-        font-size: 12px;
-    }
 }

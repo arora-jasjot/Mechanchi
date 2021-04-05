@@ -7,7 +7,6 @@
     <title>MechG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -24,25 +23,13 @@
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item nav-tab">
-                <a class="nav-link" aria-current="page" href="#notifications">Notifications</a>
+                <a class="nav-link" aria-current="page" href="#content">Content</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Content
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./files/syllabus.pdf">Syllabus</a></li>
-                  <li><a class="dropdown-item" href="#">Notes</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./files/calendar.pdf">Academic Calendar</a></li>
-                  <li><a class="dropdown-item" href="./files/fee.pdf">Fee Structure</a></li>
-                </ul>
+              <li class="nav-item nav-tab">
+                <a class="nav-link" aria-current="page" href="#notes">Study Material</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#classes">Classes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#assignments">Assignments</a>
+              <li class="nav-item nav-tab">
+                <a class="nav-link" aria-current="page" href="#lectures">Lectures</a>
               </li>
             </ul>
           </div>
@@ -52,125 +39,123 @@
           <div class="welcome">
             <div class="heading" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">Mechanical Engineering Board</div>
             <div class="tagline" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">Don't want to attend online classes at moment? Want study material, notes or even recorded lectures? Welcome to the <b> Official Website of Section G Mechanchis.</b> Here you will get all the stuff you want for FREE.</div>
-            <a href="#classes" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000"><div class="btn btn-primary">LECTURES</div></a>
+            <a href="#lectures" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000"><div class="btn btn-primary">LECTURES</div></a>
         </div>
       </div>
-      <div class="section" id="notifications">
+      <div class="section colored" id="content">
         <div class="container">
-          <h1 class="heading">Notifications</h1>
-          <p class="content">Here are some important notifications from college or faculty. Please follow the instructions as per given orders.</p>
-          <div class="board">
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
-            <div class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolor</div>
+          <h1 class="heading">Content</h1>
+          <div class="contents">
+            <div class="syllabus cont-book">
+              <div class="img">
+                <img src="/images/syllabus.jpg" alt="">
+              </div>
+              <div class="head">Syllabus</div>
+              <div class="sem">Sem - II</div>
+              <div class="download"><a href="/files/syllabus.pdf">Download</a></div>
+            </div>
+            <div class="fee cont-book">
+              <div class="img">
+                <img src="/images/fee.jpg" alt="">
+              </div>
+              <div class="head">Fee Structure</div>
+              <div class="sem">Sem - II</div>
+              <div class="download"><a href="/files/fee.pdf">Download</a></div>
+            </div>
+            <div class="calendar cont-book">
+              <div class="img">
+                <img src="/images/calendar.jpg" alt="">
+              </div>
+              <div class="head">Academic Calendar</div>
+              <div class="sem">Sem - II</div>
+              <div class="download"><a href="/files/calendar.pdf">Download</a></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="section colored" id="classes">
+      <div class="section" id="notes">
         <div class="container">
-          <h1 class="heading">Classes</h1>
-          <p class="content">Missed any lecture? Can't cope with ongoing syllabus in Class. Just re-watch previous lectures from here. You can search for the date or subject code to find your required video.</p>
-          <table id="classTable">
-            <thead>
-                <tr>
-                    <th scope="col">Subject-Code</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td><b>EE-101</b></td>
-                  <td>*Video Link here*</td>
-                  <td>23-03-2021</td>
-                </tr>
-                <tr>
-                  <td><b>HS-101</b></td>
-                  <td>*Video Link here*</td>
-                  <td>20-03-2021</td>
-                </tr>
-                <tr>
-                  <td><b>MS-101</b></td>
-                  <td>*Video Link here*</td>
-                  <td>21-03-2021</td>
-                </tr>
-                <tr>
-                  <td><b>MA-111</b></td>
-                  <td>*Video Link here*</td>
-                  <td>22-03-2021</td>
-                </tr>
-                <tr>
-                  <td><b>CY-101</b></td>
-                  <td>*Video Link here*</td>
-                  <td>16-03-2021</td>
-                </tr>
-            </tbody>
-          </table>
+          <h1 class="heading">Study Material</h1>
+          <div class="contents">
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/Physics.jpg" alt="">
+              </div>
+              <div class="head">PHYSICS Practical</div>
+              <div class="sub">PH-102</div>
+              <div class="download"><a href="/files/PhFile.pdf">Download</a></div>
+            </div>
+            <div class="fee cont-book">
+              <div class="img">
+                <img src="/images/electronics.jpg" alt="">
+              </div>
+              <div class="head">Electronics Practical</div>
+              <div class="sub">EC-102</div>
+              <div class="download"><a href="/files/EcFile.pdf">Download</a></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="section" id="assignments">
+      <div class="section colored" id="lectures">
         <div class="container">
-          <h1 class="heading">Assignments</h1>
-          <p class="content">All the given assignments will be uploaded here with every information. Students are given option to upload Answer-Key file <i>(in pdf format only)</i>. When the answers-key is uploaded, anyone can download it.</p>
-          <table id="assignmentTable">
-            <thead>
-                <tr>
-                    <th scope="col">Description</th>
-                    <th scope="col">To be Submitted by</th>
-                    <th scope="col">Answer-Key</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td>HS-101 Assignment - Communications</td>
-                  <td>16-03-2021</td>
-                  <td>*Upload / Download Link*</td>
-                </tr>
-                <tr>
-                  <td>MA-111 Assignment - Matrix <b>(G1)</b></td>
-                  <td>11-03-2021</td>
-                  <td>*Upload / Download Link*</td>
-                </tr>
-                <tr>
-                  <td>CY-102 Lab File <b>(G2)</b></td>
-                  <td>18-03-2021</td>
-                  <td>*Upload / Download Link*</td>
-                </tr>
-                <tr>
-                  <td>EE-101 Assignment AC Circuits</td>
-                  <td>15-03-2021</td>
-                  <td>*Upload / Download Link*</td>
-                </tr>
-            </tbody>
-          </table>
+          <h1 class="heading">Recorded Lectures</h1>
+          <p class="content">Special Thanks to <b>Arjun Singh</b> <i>(20BME009)</i> for these recordings.</p>
+          <div class="contents">
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/mathematics.jpg" alt="">
+              </div>
+              <div class="head">MATHEMATICS</div>
+              <div class="sub">MA-121</div>
+              <div class="download"><a href="https://drive.google.com/drive/folders/1rcuqZtWa-XuOl0zbyOqG3663YkEM5Mqq"> Watch</a></div>
+            </div>
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/computer.jpg" alt="">
+              </div>
+              <div class="head">Computer Science</div>
+              <div class="sub">CS-101</div>
+              <div class="download"><a href="https://drive.google.com/drive/folders/1HoChXBXUyS1vRWG2tnXM7uBCeDOBkxSl"> Watch</a></div>
+            </div>
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/electronics.jpg" alt="">
+              </div>
+              <div class="head">Basic Electronics</div>
+              <div class="sub">EC-101</div>
+              <div class="download"><a href="https://drive.google.com/drive/folders/1iasvHSv0a-b7Y_6vPJr2cZ18RCye31Yn"> Watch</a></div>
+            </div>
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/graphics.jpg" alt="">
+              </div>
+              <div class="head">Engineering Graphics</div>
+              <div class="sub">ME-101</div>
+              <div class="download"><a href="https://drive.google.com/drive/folders/16zn_26ePp2JIGzDjZnRYcsGn6wKyqtk2"> Watch</a></div>
+            </div>
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/mechanics.jpg" alt="">
+              </div>
+              <div class="head">Applied Mechanics</div>
+              <div class="sub">CE-101</div>
+              <div class="download"><a href="https://drive.google.com/drive/folders/15Oc5BJFAkPi1nJmefm5946UQHY-z_tAC"> Watch</a></div>
+            </div>
+            <div class=" cont-book">
+              <div class="img">
+                <img src="/images/Physics.jpg" alt="">
+              </div>
+              <div class="head">Physics</div>
+              <div class="sub">PH-101</div>
+              <div class="download"><a href="https://drive.google.com/drive/folders/18qzezFuqsCQHTy9YtEb8ldEwoabBgc9o"> Watch</a></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section" id="footer">
         <div class="container">
           <h1 class="heading">Register your queries here</h1>
-          <p class="content">Have some queries? Spotted a bug? Fill the form to give your valuable feedback.</p>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="feedback" class="form-label">Feedback</label>
-              <textarea type="textarea" class="form-control" id="feedback" rows="8"></textarea>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-success">Submit</button>
-            </div>
-          </form>
+          <p class="content">Have some queries? Spotted a bug? Want some Help or study material? Fill the <a href="https://forms.gle/U41NHGQ7XecsjjGu5">Form</a> to give your valuable feedback.</p>
           <div class="icons mt-5">
             <a href="https://www.facebook.com/arora.jasjot"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/arora_jasjot"><i class="fab fa-instagram"></i></a>
@@ -183,16 +168,9 @@
       <div id="message">Website created with <i class="fas fa-heart"></i></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#classTable').DataTable();
-            $('#assignmentTable').DataTable();
-        });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
